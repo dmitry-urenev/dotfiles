@@ -9,4 +9,9 @@ Xft.hintstyle: hintslight
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-                                                           
+
+! ------------------------------------------------------------------------------
+! URxvt Fonts
+! ------------------------------------------------------------------------------
+
+URxvt.font: xft:Source Code Pro:size=12
