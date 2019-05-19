@@ -77,14 +77,14 @@ xbacklight -set 10
 killall -9 sxhkd dunst
 sxhkd &
 xsettingsd &
+
 WALLPAPER=$(shuf -n1 -e ~/.wallpaper/*)
-SHORTWALLPAPER=$(echo $WALLPAPER | sed "s@.*/@@" | sed "s/\..*$//")
-ls ~/.wallpaper | sort -R | tail -$N | while read file; do # useless animation
-	hsetroot -fill ~/.wallpaper/$file -tint '#3c6f86'; sleep 0.1; done
-hsetroot -fill $WALLPAPER -tint '#9ccfe6'
+feh --bg-fill $WALLPAPER
+
 dunst \
 -lb "$BACKGROUND" -lf "$FOREGROUND" -lfr "$GREEN" \
 -nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
-notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $SHORTWALLPAPER wallpaper"
+
+notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $WALLPAPER wallpaper"
