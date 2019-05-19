@@ -87,4 +87,5 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 
+~/.config/polybar/launch.sh &
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $WALLPAPER wallpaper"
