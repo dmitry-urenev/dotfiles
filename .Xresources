@@ -2,7 +2,7 @@
 ! Xft Font Configuration
 ! ------------------------------------------------------------------------------
 
-Xft.dpi: 192
+Xft.dpi: 140
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
@@ -17,7 +17,6 @@ Xft.rgba: rgb
 URxvt.font: xft:Source Code Pro:size=12
 
 ! font spacing
-URxvt*letterSpace:		0
 URxvt.lineSpace:		1
 
 ! general settings
