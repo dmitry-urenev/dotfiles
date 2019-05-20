@@ -33,7 +33,7 @@ fi
 ## Bspwm configurations
 bspc monitor -d 'I'
 bspc config focus_follows_pointer true
-bspc config border_width 4
+bspc config border_width 2
 bspc config window_gap 8
 bspc config focused_border_color "$BLUE" 
 bspc config normal_border_color "$BLACK"
@@ -43,10 +43,11 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config paddingless_monocle true
 bspc config single_monocle false
+
 bspc config top_padding 8
-bspc config right_padding 8
-bspc config bottom_padding 8
-bspc config left_padding 8
+bspc config right_padding 0
+bspc config bottom_padding 0
+bspc config left_padding 0
 
 ## Window rules
 # remove all rules first
@@ -83,6 +84,8 @@ dunst \
 -nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
+
+feh --bg-fill '~/.wallpaper/bicycle.jpg'
 
 ~/.config/polybar/launch.sh &
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color scheme"
