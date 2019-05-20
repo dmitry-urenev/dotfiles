@@ -31,9 +31,9 @@ if [ -e ~/.cache/paintee ]; then
 fi
 
 ## Bspwm configurations
-bspc monitor -d 'I'
+bspc monitor -d I II III IV V VI VII VIII IX X
 bspc config focus_follows_pointer true
-bspc config border_width 2
+bspc config border_width 3
 bspc config window_gap 8
 bspc config focused_border_color "$BLUE" 
 bspc config normal_border_color "$BLACK"
