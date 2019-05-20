@@ -57,7 +57,7 @@ width = 90%
 height = 40
 offset-x = 5%
 offset-y = 2%
-bottom = true
+; bottom = true
 fixed-center = false
 line-size = 2
 
@@ -117,11 +117,11 @@ enable-scroll = true
 format-padding = 0
 
 ; Icons for workspaces are here
-icon-0 = 1;
-icon-1 = 2;
-icon-2 = 3;
-icon-3 = 4;
-;icon-4 = 5;
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3;
+icon-3 = 4;
+;icon-4 = 5;
 icon-default = 
 
 format = <label-state>
@@ -146,13 +146,13 @@ label-occupied-underline = ${color.coccupied}
 
 [module/term]
 type = custom/text
-content = 
+content = 
 content-foreground = ${color.fg-alt}
 click-left = urxvt &
 
 [module/files]
 type = custom/text
-content = 
+content = 
 content-padding = 1
 content-foreground = ${color.fg-alt}
 click-left = thunar &
@@ -160,7 +160,7 @@ click-right = ranger &
 
 [module/browser]
 type = custom/text
-content = 
+content = 
 content-padding = 1
 content-foreground = ${color.fg-alt}
 click-left = chromium &
@@ -168,7 +168,7 @@ click-right = firefox &
 
 [module/settings]
 type = custom/text
-content = 
+content = 
 content-padding = 1
 content-foreground = ${color.fg-alt}
 click-left = lxappearance &
@@ -182,16 +182,16 @@ type = internal/alsa
 ;mapped = true
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
-format-muted-prefix = " "
+format-muted-prefix = " "
 label-muted = MUTE
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
-ramp-volume-5 = 
-ramp-volume-6 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
+ramp-volume-6 = 
 
 [module/network]
 type = custom/script
@@ -204,12 +204,12 @@ tail = true
 type = internal/date
 interval = 30
 label =  %time%
-time =  %H:%M %p
-time-alt =  %Y-%m-%d
+time =  %H:%M %p
+time-alt =  %Y-%m-%d
 
 [module/powermenu]
 type = custom/text
-content = 
+content = 
 content-padding = 2
 content-background = ${color.acolor}
 content-foreground = ${color.fg}
