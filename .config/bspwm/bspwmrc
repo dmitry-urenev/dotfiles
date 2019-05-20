@@ -85,7 +85,7 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 
-feh --bg-fill '~/.wallpaper/bicycle.jpg'
+feh --bg-fill ~/.wallpaper/bicycle.jpg
 
 ~/.config/polybar/launch.sh &
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color scheme"
