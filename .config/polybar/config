@@ -203,7 +203,7 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 label-font = 0
 
-format-disconnected =
+format-disconnected = 'NOT CONNECTED'
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
