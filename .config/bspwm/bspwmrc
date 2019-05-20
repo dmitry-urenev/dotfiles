@@ -78,9 +78,6 @@ killall -9 sxhkd dunst
 sxhkd &
 xsettingsd &
 
-WALLPAPER=$(shuf -n1 -e ~/.wallpaper/*)
-feh --bg-fill $WALLPAPER
-
 dunst \
 -lb "$BACKGROUND" -lf "$FOREGROUND" -lfr "$GREEN" \
 -nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
@@ -88,4 +85,4 @@ dunst \
 sleep 0.5
 
 ~/.config/polybar/launch.sh &
-notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $WALLPAPER wallpaper"
+notify-send "Bspwm Loaded" "With $SHORTCOLOR color scheme"
