@@ -56,6 +56,8 @@ bspc rule -r *:*
 bspc rule -a URxvt desktop='^1' follow=on focus=on
 # 2 > web
 bspc rule -a Firefox desktop='^2' follow=on focus=on
+# 4 > code
+bspc rule -a code-oss desktop='^4' follow=on focus=on
 
 # 6 > settings
 # declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
