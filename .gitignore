@@ -1,9 +1,20 @@
-.bash*
-.cache
-.Xauthority
-.local
-.git-credentials
-.gitconfig
-.subversion
-.mozilla
-.fehbg
+# ignore all
+*
+
+# include only:
+!.colors
+!.config/bspwm
+!.config/compton
+!.config/dunst
+!.config/neofetch
+!.config/polybar
+!.config/rofi
+!.config/sxhkd
+!.scripts
+!.wallpaper
+!.gitignore
+!.profile
+!.xinitrc
+!.Xresources
+!.xserverrc
+!xorg.config

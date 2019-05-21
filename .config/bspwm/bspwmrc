@@ -55,7 +55,8 @@ bspc rule -r *:*
 # 1 > terminal
 bspc rule -a URxvt desktop='^1' follow=on focus=on
 # 2 > web
-bspc rule -a Firefox desktop='^2' follow=on focus=on
+bspc rule -a Firefox desktop='^2' focus=on
+bspc rule -a Chromium desktop='^2' focus=on
 # 4 > code
 bspc rule -a code-oss desktop='^4' follow=on focus=on
 
