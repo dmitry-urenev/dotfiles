@@ -22,6 +22,9 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
+super + l
+	i3lock
+
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
