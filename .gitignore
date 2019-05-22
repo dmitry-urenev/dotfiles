@@ -10,6 +10,7 @@
 !.config/polybar
 !.config/rofi
 !.config/sxhkd
+!.config/i3lock-fancier
 !.scripts
 !.wallpaper
 !.gitignore
