@@ -11,6 +11,7 @@
 !.config/rofi
 !.config/sxhkd
 !.config/i3lock-fancier
+!.config/fontconfig/**.*
 !.scripts
 !.wallpaper
 !.gitignore

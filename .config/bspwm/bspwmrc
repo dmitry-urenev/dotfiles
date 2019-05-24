@@ -19,6 +19,10 @@ getcolors () {
 }
 # Merged in the default .xinitrc
 # xrdb ~/.Xresources
+
+xset +fp ~/.fonts # Inform the X server of new directories
+xset fp rehash    # Forces a new rescan
+
 COLOR=~/.colors/vluvy
 SHORTCOLOR=$(echo $COLOR | sed "s@.*/@@")
 xrdb -merge $COLOR
