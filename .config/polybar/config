@@ -52,7 +52,7 @@ blue-gray = #546e7a
 ;==========================================================
 
 [bar/main]
-monitor = DP-0
+; monitor = DP-0
 width = 100%
 height = 40
 offset-x = 0
@@ -96,11 +96,22 @@ cursor-scroll = ns-resize
 
 ;== Module Location ========================================================
 
-modules-left = eth
+modules-left = menu eth
 modules-center = bspwm
 modules-right = volume date power
  
 ;== Modules ========================================================
+
+
+[module/menu]
+type = custom/text
+content = 
+;alt-icon = 
+content-padding = 0
+;content-background = 
+content-foreground = ${color.acolor} 
+click-left = rmenu
+
 
 [module/bspwm]
 type = internal/bspwm
