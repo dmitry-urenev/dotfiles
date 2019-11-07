@@ -122,3 +122,14 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# PrintScreen
+#
+Print
+	flameshot full -p ~/Pictures
+ctrl + Print 
+	flameshot full -c 
+ctrl + shift + Print 
+	flameshot gui
+
