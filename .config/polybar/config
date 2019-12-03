@@ -132,7 +132,7 @@ tray-scale = 1.0
 
 modules-left = menu eth
 modules-center = bspwm
-modules-right = volume date power
+modules-right = keyboard volume date power
  
 ;== Modules ========================================================
 
@@ -211,7 +211,7 @@ type = internal/alsa
 ;mapped = true
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
-fo	rmat-muted-prefix = " "
+format-muted-prefix = " "
 label-muted = MUTE
 
 ramp-volume-0 = 
@@ -237,6 +237,19 @@ format-disconnected = 'NOT CONNECTED'
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${color.acolor}
+
+[module/keyboard]
+type = internal/xkeyboard
+format = <label-layout> <label-indicator>
+format-spacing = 0
+label-layout = %icon%  %name%
+layout-icon-default = 
+label-indicator-on = %icon%
+indicator-icon-default = 
+indicator-icon-0 = caps lock;;
+; List of indicators to ignore
+blacklist-0 = num lock
+blacklist-1 = scroll lock
 
 [module/date]
 type = internal/date

@@ -96,7 +96,8 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 
-feh --bg-fill ~/.wallpaper/bicycle.jpg
+feh --bg-fill ~/.wallpaper/mojave.jpg
+setxkbmap -model pc105 -layout us,de,ru -variant qwertz -option grp:alt_shift_toggle
 
 ~/.config/polybar/launch.sh &
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color scheme"
