@@ -97,7 +97,7 @@ dunst \
 sleep 0.5
 
 feh --bg-fill ~/.wallpaper/mojave.jpg
-setxkbmap -model pc105 -layout us,de,ru -variant qwertz -option grp:alt_shift_toggle
+# setxkbmap -model pc105 -layout us,de,ru -variant qwertz -option grp:alt_space_toggle
 
 ~/.config/polybar/launch.sh &
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color scheme"
